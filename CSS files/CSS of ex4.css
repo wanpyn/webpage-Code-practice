@@ -1,0 +1,24 @@
+h1{
+color:teal;
+background-color: plum; 
+text-align: center;
+text-decoration: underline wavy black;
+letter-spacing:15px;
+font-size: 30px;
+text-transform: uppercase;
+/* font-family can be use to put multiple types of font incase the required one is not available */
+/* we can use the fantasy or monospace etc these type auto selects fonts for us */
+font-family: monospace;
+}
+button{
+    color:magenta;
+    background-color: cyan;
+    /* use to set the weight of the font like dark or light 400 is normal and 700 is bold depends on the 
+    range supported by the browser */
+    font-weight: 700;
+    
+}
+p{
+    color:olive;
+    line-height: 2;
+}

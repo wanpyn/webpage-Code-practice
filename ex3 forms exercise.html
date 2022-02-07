@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Race Registration</h1>
+        </header>
+
+        <form action="/test">
+            <label for="FirstName">First Name:</label>
+            <input type="text" name="firstname" id="FirstName" required maxlength="100">
+            <label for="LastName">Last Name:</label>
+            <input type="text" name="lastname" id="LastName" required maxlength="100">
+
+            <h3>Select a Race:</h3>
+            <section>
+                <label for="run">Fun Run 5k</label>
+                <input type="radio" name="race" id="run" value="Fun Run 5k" required>
+            </section>
+            <section>
+                <label for="halfmarathon">Half Marathon</label>
+                <input type="radio" name="race" id="halfmarathon" value="half" required>
+            </section>
+            <section>
+                <label for="fullmarathon">Full Marathon</label>
+                <input type="radio" name="race" id="fullmarathon" value="full" required>
+            </section>
+            <section>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required minlength="8" maxlength="20">
+            </section>
+            <section>
+                <label for="division">Select Age Group:</label>
+                <select name="Age" id="Options">
+                    <option value="under18">Under 18</option>
+                    <option value="18-25">18-25</option>
+                    <option value="25-30">25-30</option>
+                    <option value="30+">30+</option>
+                </select>
+                <footer>
+                    <button>Register</button>
+                </footer>
+        </form>
+
+    </main>
+</body>
+
+</html>

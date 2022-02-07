@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS NOW</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>FORMS TIME</h1>
+        </header>
+
+        <form action="/tacos">
+            <section>
+                <p>
+                    <!-- The "name" element tag is used to store some information
+                         taken it acts as a variable to store something entered by the user userchoice so the server may use the
+                         information for the backend -->
+                    <label for="UserName">Enter a UserName:</label>
+                    <input id="UserName" type="text" placeholder="USERNAME" name="username">
+                </p>
+                <p>
+                    <label for="Password">Enter Password:</label>
+                    <input id="Password" type="password" placeholder="PASSWORD" name="password">
+                </p>
+                <p>
+                    <label for="Color">Choose Color:</label>
+                    <input type="color" id="Color" name="color">
+                </p>
+                <p>
+                    <label for="NUmber">Enter Number:</label>
+                    <input type="number" placeholder="ENTER NUMBERS" id="NUmber" name="number">
+                    <input type="number" placeholder="ENTER NUMBERS" id="NUmber" name="number" min="1" max="100">
+                </p>
+            </section>
+            <section>
+                <!-- Three way to submit FORM -->
+                <!-- This button does not submt the form -->
+                <button type="button">Submit</button>
+                <!-- This submit the form -->
+                <button type="submit">Submit</button>
+                <!-- This also submit the form -->
+                <input type="submit" value="click me!!!">
+            </section>
+        </form>
+        <hr>
+        <section>
+            <h2>Hijack Searches TRY it</h2>
+            <!-- The form action can be used to persom action on submit of form it can be used to connect to a webpage follow the rule of Name tag
+            to work  -->
+            <h3>Search for Reddit</h3>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <button>Submit</button>
+            </form>
+            <h3>Search for youtube</h3>
+            <form action="https://www.youtube.com/results">
+                <input type="text" name="search_query">
+                <button>Searc youtube</button>
+            </form>
+        </section>
+        <h2>More input</h2>
+        <form action="/birds">
+            <input type="checkbox" name="agree_tos" id="agree" value="agree_tos_now" checked>
+            <label for="agree">I agree to the Terms And Services</label>
+            <p>
+                <!-- inp press tap generate the input layout -->
+                <!-- use name to make the radio button work -->
+                <!-- use the Value tag to work with the back end so the server will know wat the user chooosed -->
+                <label for="XS">XS:</label>
+                <input type="radio" name="size" id="XS" value="XS">
+                <label for="M">M</label>
+                <input type="radio" name="size" id="M" value="M">
+                <label for="S">S</label>
+                <input type="radio" name="size" id="S" value="S">
+            </p>
+            <p>
+                <label for="meal">Please select the game you want:</label>
+                <select name="Game" id="meal">
+                    <option value="Valorant">Valorant</option>
+                    <option value="DOTA 2" selected>DOTA 2</option>
+                    <option value="CS-GO">CS-GO</option>
+                    <option value="Pubg">Pubg</option>
+                </select>
+            </p>
+            <p>
+                <!-- here the tag value is used to set the starting values of the number -->
+                <label for="amount_of_games_played">Amount Played</label>
+                <input type="range" name="HoursP" id="amount_of_games_played" value="6" step="2" min="1" max="30">
+            </p>
+            <p>
+                <label for="Expresing">Describe the game u choosed</label>
+                <br>
+                <textarea id="Expresing" name="Expressing?" rows="10" cols="50"
+                    placeholder="Type something here"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+        <form action="/test">
+            <h2>Validation</h2>
+            <label for="first">Enter First Name:</label>
+            <input type="text" name="first" id="first" required>
+            <label for="username">UserName:</label>
+            <input type="text" name="username" id="username" minlength="8" maxlength="20" required>
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body{
+    background-color: #fefae0;
+}
+button{
+    font-size:30px;
+    background-color: #ffadad;
+}
+h1,h2{
+    color:#457b9d;
+}
+/*  This is an ID selector */
+#signup{
+    color: #9d0208;
+    background-color: #d8f3dc;
+}
+span{
+    color: #457b9d;
+}
+/* This is a class selector */
+.tags{
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+/* The decendent selector is used to style subcategory of a tag example the anchor 
+tag which is inside the li tag or a part of a section by adding a space between the main tag and sub tag, 
+we can also use it with a class selector it can be dested anywhere*/
+.post a {
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: 700;
+}
+footer a{
+    color: #e63946;
+}
+/* The adjacent decendent selector is used to select tag that are after it or the next tag after it and the we combine the next 
+selector using the + symbol */
+h2 + button{
+    font-size: 16px;
+}
+/* The direct child decendent selector is used to select tags that were before it or the previous tag of it, the combination is
+done using the greater sysbol > */
+footer > a{
+    color: #a8dadc;
+}
+/* This is an attribute selector select attribtute base on certain elements*/
+input[type="password"]{
+     color: aquamarine;
+}
+
+/* used for the specfic href styling */
+a[href*="google"]{
+    color: mediumaquamarine;
+}
+/* section.post{
+    background-color: magenta;
+} */
+
+/* pseudo classes it starts with the : colan symbol. it is used as a state of wat occurs in that moment*/
+button:hover{
+    background-color: midnightblue;
+    color:whitesmoke;
+}
+.post button:hover{
+    background-color: midnightblue;
+}
+a:hover{
+    text-decoration: underline;
+}
+.post button:active{
+    background-color: whitesmoke;
+}
+.post:nth-of-type(3n){
+    background-color: #dfe8dc;
+}
+/* pseudo element it starts with the :: double semi colan. can do it 
+without the first tag which applies to all. it is noramlly used for parts or things in the doc */
+h2::first-letter{
+    font-size: 70px;
+}
+p::first-line{
+    color:purple;
+}
+::selection{
+    background-color: #fcbf49;
+}
