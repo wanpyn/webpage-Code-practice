@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS files/CSS of ex10.css">
+</head>
+
+<body>
+    <!-- em follows the parent font size if parent is 10px then 2em is 20px n 1em is equal -->
+    <h1>using Em's</h1><button>click me</button>
+    <article id="ems">
+        <h2>I am H2</h2>
+        <h3>i am h3</h3>
+        <button>click me</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae atque, laudantium, tempora ipsa laboriosam
+            culpa voluptatum nostrum asperiores velit, delectus earum officiis odit molestias! Iusto tenetur placeat
+            unde voluptate minus.
+            Ipsa eveniet unde consequuntur perspiciatis id modi error fuga! Dolore eligendi sunt sed nam consequuntur,
+            ab labore natus, sapiente ipsam illum eos tempore laborum ipsa ad vel quidem commodi eius.</p>
+        <!-- it keeps scaling based on parent element which is a problem in ems u can see it -->
+        <ul>
+            <li>pasta
+                <ul>
+                    <li>Ravioli</li>
+                    <ul>
+                        <li>Spinnach Ricota</li>
+                    </ul>
+                    <li>Penne</li>
+                </ul>
+            </li>
+            <li>Salad</li>
+            <li>Glato</li>
+        </ul>
+    </article>
+    <button>click me</button>
+
+    <!-- in rems it follows the root html element meaning 20px of 1em is 20px and 2em is 40px always -->
+    <h1>USing Rems </h1><button>click me</button>
+    <article id="rems">
+        <h2>I am H2</h2>
+        <h3>i am h3</h3>
+        <button>click me</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae atque, laudantium, tempora ipsa laboriosam
+            culpa voluptatum nostrum asperiores velit, delectus earum officiis odit molestias! Iusto tenetur placeat
+            unde voluptate minus.
+            Ipsa eveniet unde consequuntur perspiciatis id modi error fuga! Dolore eligendi sunt sed nam consequuntur,
+            ab labore natus, sapiente ipsam illum eos tempore laborum ipsa ad vel quidem commodi eius.</p>
+        <!-- as u can see here the element size follows the root element and 
+            not the parent element like the ems -->
+        <ul>
+            <li>pasta
+                <ul>
+                    <li>Ravioli</li>
+                    <ul>
+                        <li>Spinnach Ricota</li>
+                    </ul>
+                    <li>Penne</li>
+                </ul>
+            </li>
+            <li>Salad</li>
+            <li>Glato</li>
+        </ul>
+    </article>
+    <button>click me</button>
+</body>
+
+</html>
