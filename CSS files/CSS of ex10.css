@@ -1,0 +1,44 @@
+/* as u can seee here the margin-left scales accoriding to
+ the font size of h2 n not the parent element of h2 */
+#ems h2{
+    font-size: 3em;
+    margin-left: 1em;
+}
+/* as u can see h2 follows the parent element fontsize by using ems it can be twice the size of parent
+element suppose below 1m then size is equal and above 2em size of larger than parent element
+size it is twice this only works on certain elements refer to element (h2)*/
+#ems{
+    font-size: 20px;
+}
+/* as u can see here the 0.5em is smaller than the parent size which is 20px */
+#ems h3{
+    font-size: 0.9em;
+}
+#ems p{
+    font-size: 1em;
+}
+/* same here it follows the main parent element font size */
+button{
+    font-size: 1em;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    background-color: antiquewhite;
+    color: blueviolet;
+}
+/* one problem is it keeps scaling based on parents */
+#ems ul{
+    font-size: 1.5em;
+}
+/* rem always scale based on the root element thus it is constant */
+#rems h2{
+    font-size: 3rem;
+}
+#rems h3{
+    font-size: 2rem;
+}
+#rems ul{
+    font-size: 1.2rem;
+}
+#rems button{
+    font-size: 0.9rem;
+}

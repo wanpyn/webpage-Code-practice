@@ -1,0 +1,18 @@
+section{
+    background-color: aqua;
+    width: 800px;
+    height: 500px;
+}
+/* this shows the use of percentage % of how it works inside a parent element and 
+changes relative to the parent element */
+div{
+    background-color: blueviolet;
+    width: 50%;
+    height: 90%;
+}
+/* line height follows the size of the font size not the parent is size like the percentage */
+h1{
+    font-size: 50px;
+     border: 1px solid black;
+   line-height: 50px;
+}
