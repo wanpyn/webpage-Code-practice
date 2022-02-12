@@ -1,0 +1,18 @@
+section{
+    width: 50%;
+    height: 400px;
+    background-color: aqua;
+}
+/* this affects only the background property not other elements */
+#rgba{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 99, 71, 0.4);
+}
+/* this affects the whole property watever is inside */
+#opacity{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    opacity: 0.5;
+}
