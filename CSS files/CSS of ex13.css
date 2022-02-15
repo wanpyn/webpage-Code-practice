@@ -1,0 +1,41 @@
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: rebeccapurple;
+    transition: background-color 3s ease-in, border-radius 1s;
+}
+.circle:hover{
+    background-color: aqua;
+    border-radius: 50%;
+}
+section div{
+    width: 100px;
+    height: 100px;
+    background-color: darkolivegreen;
+    margin: 5px 5px ;
+    transition: margin-left 3s ;
+}
+section:hover div{
+    margin-left: 500px;
+}
+/* all this end at the same place same time regarless of the time they start  */
+/* this is like normal speed */
+div:nth-of-type(1){
+    transition-timing-function: linear;
+}
+/* this is like slow n then fast  */
+div:nth-of-type(2){
+    transition-timing-function: ease-in;
+}
+/* this is fast n then slow */
+div:nth-of-type(3){
+    transition-timing-function: ease-out;
+}
+/* this is very slow n then suddely fast  */
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.7,0,0.84,0);
+}
+/* this is slow n then jumps some steps fast n then slow */
+div:nth-of-type(5){
+    transition-timing-function: cubic-bezier(0.85,0,0.15,1);
+}
