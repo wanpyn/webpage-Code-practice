@@ -1,0 +1,26 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151b29;  
+}
+/* the transition set on each element which is best prefered is having a smooth effect on the button hover  */
+button{
+    background:none;
+    color:#ffa260;
+    border:2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+/* box-shadow follows the x offet or cordinate, y offset, blur radius and spread radius can use rgba for color*/
+/* transform is changing the location of the button a little offsetY as to show its an interactive button */
+button:hover{
+    border-color: #f1ff5c;
+    color: ghostwhite;
+    box-shadow: 0 0.5em 0.6em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor:pointer
+}
