@@ -1,4 +1,4 @@
-div{
+div {
     width: 100px;
     height: 100px;
     background-color: #3d405b;
@@ -6,36 +6,44 @@ div{
     margin: 10px;
     display: inline-block;
 }
-#middle{
+
+#middle {
     background-color: #81b29a;
 }
+
 /* this shows the default page position static which follows the default 
 aligment thus top left buttom right does not work */
-#static #middle{
+#static #middle {
     position: static;
     top: 100px;
 }
+
 /* relative makes us alble to aligmnet the elements how we want give us more freedom to design an element
 since it has become an offset from the static content now we can manupulate it by still folowing the 
 normal flow of the document*/
-#relative #middle{
+#relative #middle {
     position: relative;
-    top:50px;
-    left:50px;
+    top: 50px;
+    left: 50px;
 }
-#absolute{
+
+/* we need to force it out of the parent element to make it go 
+to the parent elemen otherwise it follow the main element */
+#absolute {
     position: relative;
 }
+
 /* removes the element from the normal flow of the document it is relative to the postion of the 
 parent element so basically it will be position closest to the parent element*/
-#absolute #middle{
+#absolute #middle {
     position: absolute;
     top: 1px;
     left: 1px;
 }
+
 /* behaves like an absolute but it is fixed it is relative to the main containing block always n does not follow
 a parent element*/
-#fixed #middle{
+#fixed #middle {
     position: fixed;
     top: 0;
     left: 0;

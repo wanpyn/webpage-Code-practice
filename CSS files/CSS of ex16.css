@@ -1,6 +1,6 @@
 /* under background size the attribute cover shrinks it down as much as posible but it also crops it  
 while background contain tries to fit the image inside the main element but it may occur repeat*/
-section{
+section {
     width: 70%;
     height: 500px;
     background-image: url("https://images.unsplash.com/photo-1604537529586-87ac173f4310?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80");
@@ -13,7 +13,8 @@ section{
     background-repeat: no-repeat;
     font-size: 80px;
 }
-h1{
+
+h1 {
     font-size: 1em;
-    color:ghostwhite;
+    color: ghostwhite;
 }
