@@ -1,0 +1,18 @@
+img {
+    width: 30%;
+    /* margin:1.66666 
+    we got by dividing 10 /6 
+    how we got 10 cause 3 image is there in one block */
+    margin: calc(10%/6)
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    border-top: 3px solid black;
+    padding: 1.2em 0;
+    width: 50%;
+    margin-left: calc(10%/6);
+}
